@@ -277,17 +277,28 @@
 
         <div class="content mt-3">
             <div class="animated fadeIn">
-                <div class="row">
-                  <div class="col-md-12">
-                      <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
-                          <div class="row form-group" align="right">
-                            <div class="col-md-2"><label for="file-input" class="form-control-label"><strong>엑셀 업로드</strong></label></div>
-                            <div class="col-md-10"><input type="file" id="file-input" name="file-input" class="form-control-file"></div>
-                          </div>
-                      </form>
-                  </div>
+              <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <form action="http://127.0.0.1/v1/customer/import/" method="post" enctype="multipart/form-data" class="form-horizontal">
+                        <div class="card-header">
+                            <strong class="card-title">엑셀 업로드</strong>
+                        </div>
+                        <div class="card-body">
+                                <div class="row form-group">
+                                  <div class="col col-md-3"><label for="file-input" class=" form-control-label">File input</label></div>
+                                  <div class="col-12 col-md-9"><input type="file" id="file-input" name="file-input" class="form-control-file"></div>
+                                </div>
+                        </div>
+                        <div class="card-footer">
+                          <button type="submit" class="btn btn-primary btn-sm">
+                            <i class="fa fa-dot-circle-o"></i> Submit
+                          </button>
+                        </div>
+                    </form>
+                    </div>
                 </div>
-
+            </div>
                   <div class="row">
                     <div class="col-md-12">
                         <div class="card">
